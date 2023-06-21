@@ -1,16 +1,24 @@
 package com.alten.interview.data;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
 public class MathProblemResponse {
 
 	private Integer k;
+
+	public MathProblemResponse(Integer k) {
+		super();
+		this.k = k;
+	}
+
+	public MathProblemResponse() {
+		super();
+	}
+
+	public Integer getK() {
+		return k;
+	}
+
+	public void setK(Integer k) {
+		this.k = k;
+	}
 	
 }
